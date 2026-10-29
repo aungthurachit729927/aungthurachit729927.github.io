@@ -1,0 +1,233 @@
+/* universal selector */
+*{
+    /* color: red; */
+    /* text-align: center; */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* tag selector/element selector */
+h1{
+    color: red;
+    text-align: center;
+}
+
+
+/* arttubute selector */
+a[title="google"]{
+    color: red;
+}
+/* ID Selector */
+#idselector1{
+    color:blue;
+    text-indent: 50px;
+    text-decoration: 30px;
+    line-height: 40px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+.classselector1{
+    color: green;
+    text-transform: capitalize;
+    font-size: 24;
+}
+/* Desc */
+#desc1 a{
+    color: red;
+
+}
+/* child selector*/
+#child>a{
+    color: red;
+}
+
+
+/* pseudo seloctor */
+a:link{
+    color: yellow;
+    text-decoration: none;
+    letter-spacing: 10px;
+}
+a:hover{
+
+    color: red;
+}
+a:active{
+    color: green;
+}
+.a:visited{
+    color: brown;
+}
+
+
+/* Target */
+:target{
+    color: brown;
+    text-transform: uppercase;
+    word-spacing: 20px;
+    line-height: 15px;
+}
+
+/*  */
+
+
+
+#mydata{
+    width: 50%;
+    margin: auto;
+}
+input[type="text"]{
+    width: 100%;
+    height: 40px;
+}
+input[type="text"]:focus{
+    background-color: red;
+    color: white;
+    letter-spacing: 10px;
+    outline: none;
+}
+input[type="radio"]:checked + label{
+    color: red;
+    font-style: italic;
+}
+input[type="checkbox"]:enabled + label{
+    color: green;
+}
+input[type="checkbox"]:checked + label{
+    color: red;
+    font-style: italic;
+}
+
+
+
+input[type="checkbox"]:disabled + label{
+    color: gray;
+}
+#fName:read-only{
+    background-color: green;
+    color: white;
+}
+
+/* empaty */
+div:empty{
+    background-color: red;
+    height: 20px;
+}
+ul li:last-child{
+    background-color: green;
+}
+ul li:first-child{
+    background-color: blue;
+}
+ul li:nth-child(4){
+    background-color: red;
+}
+
+
+/* margin */
+#marginOne{
+    border: 1px solid black;
+    /* margin: 50px */
+    /* T/R/B/L*/
+    /* margin: 40px 0;*/
+    /* T&B/L&R */
+    /* margin: 40px 100px 0; */
+    /* T/L&R/B */
+    margin: 100px 50px 0 10px;
+    /* T/R/B/L */
+    #marginTwo
+    margin-bottom: 100px;
+}
+.paddingOne{
+    /* 50px 10px 100px 20px; */
+    padding-top: 100px;
+}
+
+
+
+/* Border */
+.borderOne{
+    /* border: 50px solid green; */
+    border-left: 30px solid red;
+}
+.borderTwo{
+    border-style: dashed dotted solid double;
+    border-color: brown red;
+    border-width: 20opx 10px;
+}
+.border{
+    border: 10px solid red;
+    border-radius: 50px 10px;
+}
+
+
+/* Layout */
+.block{
+    border: 1px solid red;
+    width: 400px;
+    height: 40px;
+    display: inline-block;
+}
+.inline{
+    border: 1px solid black;
+    width: 400px;
+    display: inline-block;
+    height: 40px;
+}
+
+
+/* float */
+.floatright{
+    width: 30;
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.floatleft{
+    width: 40;
+    float: left;
+}
+/
+    /* Float */
+    .floatright{
+        width: 30%;
+        float: right;
+    }
+    .clear{
+        clear: right;
+    }
+    .floatleft{
+        width: 40;
+        float: left;
+    }
+    /* grid */
+    .graidOne div,.graidTwo div,.graidThree div{
+        padding: 20px;
+        text-align: center;
+        color: white;
+    }
+    .graidOne{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    /* grid-column-gap: 40px;
+    grid-row-gap: 50px; */
+    grid-gap: 30px;
+    }
+    .graidTwo,.graidThree{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .columnOne{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    .rowOne{
+        grid-column-start: 2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    
+    
